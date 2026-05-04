@@ -820,6 +820,11 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Action Info"
 
+[node name="FactionInfoButton" type="Button" parent="TopPanel/SettingsDialog/VBoxContainer" unique_id=81094687]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Faction Info"
+
 [node name="QuitButton" type="Button" parent="TopPanel/SettingsDialog/VBoxContainer" unique_id=1065418446]
 unique_name_in_owner = true
 layout_mode = 2
@@ -1010,6 +1015,133 @@ Choose a settlement, turn a building within into an effigy which spawns 4 sodier
 8 soldiers if you have the sorcercer dard lord and 1 armor if you have the black smith dark lord"
 
 [node name="CloseActionInfoPanel" type="Button" parent="ActionInfoPanel/VBoxContainer" unique_id=1600596386]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Close"
+
+[node name="FactionInfoPanel" type="Panel" parent="." unique_id=774044237]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -480.25
+offset_top = -494.5
+offset_right = 480.25
+offset_bottom = 494.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FactionInfoPanel" unique_id=537733632]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -437.0
+offset_top = -377.0
+offset_right = 437.0
+offset_bottom = 377.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DwarfFactionTitle" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=619775717]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Dwarf Faction"
+
+[node name="DwarfFaction" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=670802305]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+text = "The Dwarves focus on economy and scaling their power over time. 
+The Gold Hoard represents their stored gold 
+and determines how many actions they can perform each turn. 
+Normally, Dwarves can take 2 actions,
+but by accumulating enough gold to reach new Gold Hoard levels, 
+they unlock additional actions.
+When a new level is reached, they can assign it during the War Meeting. 
+Assigning a level means choosing one of their 5 possible actions  (Mine, Smith, Train, March, or Build) 
+and gaining the ability to perform that specific action one extra time."
+
+[node name="Space" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=863369876]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+
+[node name="ElfActionTitle" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=896142558]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.41568628, 0.49411765, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Elf War Meeting Actions"
+
+[node name="ElfActionEffects" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=111515827]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.41568628, 0.49411765, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+text = "The Elves are focused on long-term growth, magic, and seasonal cycles. 
+Their strength comes from Magic and Seasons.
+Their core mechanic is Magic Serenity and Sacred Growth. 
+If Elves hold a settlement for a full round, Sacred Growth will appear (if a slot is available). 
+Magic Serenity increases the longer it has been since last spring. 
+When spring arrives, they gain soldiers in settlements with Sacred Growth,
+based on their Magic Serenity level. 
+In addition to that, they also have elf magic, 
+they gain one magic for every Sacred Growth they own at the end of their turn.
+In the Action phase, Elves can only move, but they can do so an unlimited number of times."
+
+[node name="Space2" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=2127109461]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+
+[node name="OrcActionTitle" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=313852072]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.49411765, 0.24705882, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Orc Actions"
+
+[node name="OrcActionEffects" type="Label" parent="FactionInfoPanel/VBoxContainer" unique_id=1887910208]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.49411765, 0.24705882, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+text = "The Orcs are aggressive and momentum-based, focusing on conquest and destruction. 
+Their gameplay revolves around War Promises and Dark Lords.
+During the War Meeting, Orcs choose a Dark Lord, each providing different bonuses,
+ and they are lost if they are defeated in combat:
+The Dragon counts as 8 soldiers when attacking, 
+but consumes 1 soldier at the start of each Orc turn.
+The Wraith can be chosen an unlimited number of times and counts as 1 soldier.
+The Sorcerer counts as 2 soldiers and increases the production of the Orc building 
+Gruesome Effigy by 1 additional orc.
+The Blacksmith counts as 2 soldiers and increases the production of the 
+Orc building Gruesome Effigy by 1 armor.
+War Promises are key objectives. When Orcs capture one, 
+they can select a new War Promise from one of the 2 strongest settlements on the map 
+during their next War Meeting and gain 1 additional action 
+for each War Promise settlement they control."
+
+[node name="CloseFactionInfoPanel" type="Button" parent="FactionInfoPanel/VBoxContainer" unique_id=1566498398]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Close"
