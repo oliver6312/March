@@ -5,6 +5,7 @@ var settlement: Settlement
 var slot_index: int = -1
 var raiding_faction: int = Faction.Type.ORC
 var blacksmith_bonus: bool = false
+var raid_bonus = 8
 
 func validate(context: CommandContext) -> bool:
 	if settlement == null:
@@ -36,7 +37,7 @@ func get_error(context: CommandContext) -> String:
 
 func execute(context: CommandContext) -> void:
 	settlement.set_building_in_slot(slot_index, "")
-	settlement.set_soldiers(settlement.soldiers + 6)
-	context.turn_state.add_gold(raiding_faction, 6)
+	settlement.set_soldiers(settlement.soldiers + raid_bonus)
+	context.turn_state.add_gold(raiding_faction, raid_bonus)
 
 	print("Raided building.")

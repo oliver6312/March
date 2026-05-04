@@ -805,14 +805,24 @@ text = "Bring Dark Lord"
 unique_name_in_owner = true
 oversampling_override = 1.0
 title = "Settings"
+position = Vector2i(0, 36)
+size = Vector2i(117, 111)
 ok_button_text = "Close"
 
-[node name="QuitButton" type="Button" parent="TopPanel/SettingsDialog" unique_id=1065418446]
-unique_name_in_owner = true
+[node name="VBoxContainer" type="VBoxContainer" parent="TopPanel/SettingsDialog" unique_id=23835730]
 offset_left = 8.0
 offset_top = 8.0
-offset_right = 92.0
-offset_bottom = 55.0
+offset_right = 109.0
+offset_bottom = 66.0
+
+[node name="InfoButton" type="Button" parent="TopPanel/SettingsDialog/VBoxContainer" unique_id=2007670040]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Action Info"
+
+[node name="QuitButton" type="Button" parent="TopPanel/SettingsDialog/VBoxContainer" unique_id=1065418446]
+unique_name_in_owner = true
+layout_mode = 2
 text = "Quit"
 
 [node name="SeasonDialog" type="AcceptDialog" parent="TopPanel" unique_id=408923835]
@@ -837,16 +847,26 @@ Winder effect: You lose one soldier when you move, elves are immune to this effe
 [node name="DwarfBuildingMenu" type="Panel" parent="." unique_id=1795424472]
 unique_name_in_owner = true
 visible = false
-offset_left = 132.0
-offset_top = 218.0
-offset_right = 340.0
-offset_bottom = 427.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = -153.0
+offset_right = 104.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="DwarfBuildingMenu" unique_id=2035067856]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = 14
+anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.5
+offset_top = -71.5
+offset_bottom = 71.5
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -875,6 +895,125 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Training Grounds"
 
+[node name="ActionInfoPanel" type="Panel" parent="." unique_id=1616959812]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -480.25
+offset_top = -395.0
+offset_right = 480.25
+offset_bottom = 395.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ActionInfoPanel" unique_id=1464253061]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -437.0
+offset_top = -377.0
+offset_right = 437.0
+offset_bottom = 377.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DwarfActionTitle" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=1840304101]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Dwarf Actions"
+
+[node name="DwarfActionEffects" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=1963714542]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+text = "Build: 
+Press a settlement and choose a building to place
+Mine:
+Gain 20 gold, plus an additional 20 pr gold mine you control
+Smith:
+Gain 2 armor, plus an additional 2 pr armor smith you control
+Train:
+each of your settlements with a training ground get 4 extra soldiers,
+unless the settlement has more than 12 soldier
+March:
+Get one movement, plus an additional pr goat stable"
+
+[node name="Space" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=1112945355]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+
+[node name="ElfActionTitle" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=1312701742]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.41568628, 0.49411765, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Elf War Meeting Actions"
+
+[node name="ElfActionEffects" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=1914502261]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.41568628, 0.49411765, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+text = "Root of all evil: 
+Turn 12 of your gold into 4 magic
+Extedn season:
+Spend 4 magic to make this season last another round and gain 2 extra serenity
+Shadow Ritual:
+Spend 8 magic and a soldier, pick an elf settlement to move the soldier from, 
+and an enemy settlement to place them"
+
+[node name="Space2" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=864244430]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24705882, 0.36862746, 0.49411765, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+
+[node name="OrcActionTitle" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=1790396414]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.49411765, 0.24705882, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Orc Actions"
+
+[node name="OrcActionEffects" type="Label" parent="ActionInfoPanel/VBoxContainer" unique_id=1374773083]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.49411765, 0.24705882, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 18
+text = "Move/attack:
+Move your soldiers from one settlement to another. 
+You can choose to bring your dark lord with them.
+raid:
+choose a settlement, destroy a building in it to gain 8 soldiers and 8 gold
+Brutalize:
+Choose a settlement, turn a building within into an effigy which spawns 4 sodiers each turn.
+8 soldiers if you have the sorcercer dard lord and 1 armor if you have the black smith dark lord"
+
+[node name="CloseActionInfoPanel" type="Button" parent="ActionInfoPanel/VBoxContainer" unique_id=1600596386]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Close"
+
 [node name="WinDialog" type="AcceptDialog" parent="." unique_id=2092558284]
 oversampling_override = 1.0
 initial_position = 1
@@ -896,14 +1035,14 @@ text = "Main menu"
 [node name="leavegame" type="AcceptDialog" parent="." unique_id=1341118116]
 oversampling_override = 1.0
 initial_position = 1
-size = Vector2i(774, 141)
+size = Vector2i(846, 141)
 ok_button_text = "No"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="leavegame" unique_id=912713993]
 offset_left = 8.0
 offset_top = 8.0
-offset_right = 766.0
-offset_bottom = 92.0
+offset_right = 838.0
+offset_bottom = 96.0
 
 [node name="leaveLabel" type="Label" parent="leavegame/VBoxContainer" unique_id=1634011956]
 layout_mode = 2

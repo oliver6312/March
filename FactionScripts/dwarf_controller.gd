@@ -23,6 +23,10 @@ const ACTION_TRAIN := "train"
 const ACTION_MINE := "mine"
 const ACTION_SMITH := "smith"
 
+var training_bonus = 4
+var armor_bonus = 2
+var gold_bonus = 20
+
 # =========================
 # Buildings
 # =========================
@@ -289,7 +293,7 @@ func _action_mine() -> void:
 		return
 
 	var mines := _count_buildings(BUILDING_GOLD_MINE)
-	var gain := (1 + mines) * 20
+	var gain : int = (1 + mines) * gold_bonus
 
 	TurnState.add_gold(DWARF_FACTION, gain)
 
@@ -302,7 +306,7 @@ func _action_smith() -> void:
 		return
 
 	var smiths := _count_buildings(BUILDING_ARMOR_SMITH)
-	var gain := (1 + smiths) * 2
+	var gain : int = (1 + smiths) * armor_bonus
 
 	TurnState.add_armor(DWARF_FACTION, gain)
 
@@ -318,7 +322,7 @@ func _action_train() -> void:
 		if settlement.has_minimum_soldiers(12):
 			print("Too many soldiers, no training happened")
 		elif _settlement_has_building(settlement, BUILDING_TRAINING_GROUNDS):
-			settlement.set_soldiers(settlement.soldiers + 3)
+			settlement.set_soldiers(settlement.soldiers + training_bonus)
 
 	print("Dwarves trained soldiers")
 	_refresh_ui()

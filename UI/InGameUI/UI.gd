@@ -51,6 +51,9 @@ signal move_all_requested()
 @onready var settings_button: Button = %SettingsButton
 @onready var settings_dialog: Window = %SettingsDialog
 @onready var quit_button: Button = %QuitButton
+@onready var info_button: Button = %InfoButton
+@onready var action_info_panel: Panel = %ActionInfoPanel
+@onready var close_action_info_panel: Button = %CloseActionInfoPanel
 
 # =========================
 # Settlement details
@@ -171,6 +174,8 @@ func _connect_button_signals() -> void:
 	next_turn_button.pressed.connect(_on_next_turn_pressed)
 	settings_button.pressed.connect(_open_settings)
 	quit_button.pressed.connect(_quit_game)
+	info_button.pressed.connect(_info_action_open)
+	close_action_info_panel.pressed.connect(hide_info_action)
 	season_button.pressed.connect(_on_season_button_pressed)
 	trade_button.pressed.connect(_on_trade_button_pressed)
 	trade_dialog.confirmed.connect(_on_trade_confirmed)
@@ -321,6 +326,13 @@ func _open_settings() -> void:
 
 func _quit_game() -> void:
 	get_tree().quit()
+
+func _info_action_open() -> void:
+	action_info_panel.visible = true
+	settings_dialog.visible = false
+
+func hide_info_action() -> void:
+	action_info_panel.visible = false
 
 # =========================
 # Resource / trade UI
