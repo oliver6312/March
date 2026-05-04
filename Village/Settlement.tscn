@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://djgorxnh2gemb"]
+
+[ext_resource type="Script" uid="uid://xerce68opmqe" path="res://Village/Settlement.gd" id="1_hx6cv"]
+[ext_resource type="Texture2D" uid="uid://dihtqsnypaq7h" path="res://Village/SettlementGraphics/SelectionCircle.png" id="2_5erx4"]
+[ext_resource type="Texture2D" uid="uid://pm3t1dv4oh4e" path="res://Village/SettlementGraphics/AvailableCircle.png" id="2_u8w44"]
+[ext_resource type="Texture2D" uid="uid://dj3ah3vvgn4jr" path="res://Village/SettlementGraphics/FA.png" id="2_x8puq"]
+[ext_resource type="Texture2D" uid="uid://c7y1hxflp72sm" path="res://Village/SettlementGraphics/GM.png" id="3_x8puq"]
+[ext_resource type="Texture2D" uid="uid://blw1w1urbg48p" path="res://Village/SettlementGraphics/SettlementCircle.png" id="4_u8w44"]
+[ext_resource type="Texture2D" uid="uid://ck5w3p07ornar" path="res://Village/SettlementGraphics/AS.png" id="4_yqtt7"]
+[ext_resource type="Texture2D" uid="uid://dixcc4r2fumem" path="res://Village/SettlementGraphics/BuildingShell.png" id="5_bykt4"]
+[ext_resource type="Texture2D" uid="uid://dr4q7r2wvkdyf" path="res://Village/SettlementGraphics/GS.png" id="5_ijw05"]
+[ext_resource type="Texture2D" uid="uid://dm1vwp7e162a6" path="res://Village/SettlementGraphics/EI.png" id="6_b32a8"]
+[ext_resource type="Texture2D" uid="uid://cbugtv74b00ot" path="res://Village/SettlementGraphics/TG.png" id="6_frrbt"]
+[ext_resource type="Texture2D" uid="uid://dkvldq3yu20un" path="res://Village/SettlementGraphics/DL.png" id="7_gi5vt"]
+[ext_resource type="Texture2D" uid="uid://347s110326qi" path="res://Village/SettlementGraphics/SG.png" id="7_ijw05"]
+[ext_resource type="Texture2D" uid="uid://whdwq3q81oc0" path="res://Village/SettlementGraphics/GF.png" id="8_frrbt"]
+[ext_resource type="Texture2D" uid="uid://bnbs7oqkypkfl" path="res://Village/SettlementGraphics/WP.png" id="8_oj6me"]
+[ext_resource type="Texture2D" uid="uid://dorngc6n4on6h" path="res://Village/SettlementGraphics/WL.png" id="8_vpbmy"]
+[ext_resource type="Texture2D" uid="uid://crdkf2y0dboc1" path="res://Village/SettlementGraphics/BL.png" id="9_iemt1"]
+[ext_resource type="Texture2D" uid="uid://dbr4m2v3ays73" path="res://Village/SettlementGraphics/SL.png" id="10_tiqj1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hx6cv"]
+radius = 63.007935
+
+[node name="Area2D" type="Area2D" unique_id=167798052]
+script = ExtResource("1_hx6cv")
+farm_texture = ExtResource("2_x8puq")
+gold_mine_texture = ExtResource("3_x8puq")
+armor_smith_texture = ExtResource("4_yqtt7")
+goat_stable_texture = ExtResource("5_ijw05")
+training_grounds_texture = ExtResource("6_frrbt")
+sacred_grove_texture = ExtResource("7_ijw05")
+gruesome_effigy_texture = ExtResource("8_frrbt")
+
+[node name="AvailableCircle" type="Sprite2D" parent="." unique_id=1837975081]
+visible = false
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("2_u8w44")
+
+[node name="SelectionCircle" type="Sprite2D" parent="." unique_id=1041018242]
+visible = false
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("2_5erx4")
+
+[node name="Circle" type="Sprite2D" parent="." unique_id=1562593096]
+position = Vector2(4.7683716e-07, 1.1920929e-07)
+texture = ExtResource("4_u8w44")
+
+[node name="FactionSymbol" type="Sprite2D" parent="." unique_id=2044521403]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=53887238]
+shape = SubResource("CircleShape2D_hx6cv")
+
+[node name="BuildingSlot1" type="Sprite2D" parent="." unique_id=2116025175]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0, 64)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_bykt4")
+
+[node name="BuildingSlot2" type="Sprite2D" parent="." unique_id=5456342]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-55.43, 32)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_bykt4")
+
+[node name="BuildingSlot3" type="Sprite2D" parent="." unique_id=1546745769]
+unique_name_in_owner = true
+visible = false
+position = Vector2(55.43, 32)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_bykt4")
+
+[node name="BuildingIcon1" type="Sprite2D" parent="." unique_id=1523096974]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0, 64)
+scale = Vector2(1.8, 1.8)
+
+[node name="BuildingIcon2" type="Sprite2D" parent="." unique_id=515484887]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-55.43, 32)
+scale = Vector2(1.8, 1.8)
+
+[node name="BuildingIcon3" type="Sprite2D" parent="." unique_id=482245813]
+unique_name_in_owner = true
+visible = false
+position = Vector2(55.43, 32)
+scale = Vector2(1.8, 1.8)
+
+[node name="InfiltrationToken" type="Sprite2D" parent="." unique_id=190414953]
+unique_name_in_owner = true
+visible = false
+position = Vector2(55.43, -32)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_b32a8")
+
+[node name="DragonToken" type="Sprite2D" parent="." unique_id=1636260996]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-55.43, -32)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_gi5vt")
+
+[node name="WraithToken" type="Sprite2D" parent="." unique_id=382695799]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-55.43, -32)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_vpbmy")
+
+[node name="BlacksmithToken" type="Sprite2D" parent="." unique_id=880449146]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-55.43, -32)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("9_iemt1")
+
+[node name="SorcererToken" type="Sprite2D" parent="." unique_id=1069540384]
+unique_name_in_owner = true
+visible = false
+position = Vector2(-55.43, -32)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("10_tiqj1")
+
+[node name="WarPromiseToken" type="Sprite2D" parent="." unique_id=1952302830]
+unique_name_in_owner = true
+visible = false
+position = Vector2(0, -64)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_oj6me")
+
+[node name="SoldierLabel" type="Label" parent="." unique_id=2097102523]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NameLabel" type="Label" parent="." unique_id=1140054092]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -0.5
+offset_top = 90.0
+offset_right = 0.5
+offset_bottom = 140.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1

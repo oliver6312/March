@@ -1,0 +1,194 @@
+[gd_scene format=3 uid="uid://dvorrvguyo252"]
+
+[ext_resource type="Script" uid="uid://bl1phq4pma6hl" path="res://UI/OutGameUI/map_selection.gd" id="1_4fk6r"]
+[ext_resource type="Texture2D" uid="uid://cx685qyd5se2x" path="res://PlayBoard/Fjord/Fjord1.1.2.png" id="2_15vm8"]
+[ext_resource type="Texture2D" uid="uid://6qev8kw42vwp" path="res://PlayBoard/Split/Split1.2.3.png" id="3_fwfho"]
+[ext_resource type="Texture2D" uid="uid://tpsdvrrre3r8" path="res://PlayBoard/Bridge/Bridge1.4.1.png" id="4_7lghd"]
+[ext_resource type="Texture2D" uid="uid://b5ktwwk1o5fyx" path="res://PlayBoard/Bridge/Bridge1.3.3.png" id="4_l7tl1"]
+[ext_resource type="Texture2D" uid="uid://cseklnqibibb3" path="res://PlayBoard/Isle/Isle1.0.0.png" id="5_r38gb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7lghd"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r38gb"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ydjxy"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lnbly"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="MapSelection" type="CanvasLayer" unique_id=1165023563]
+script = ExtResource("1_4fk6r")
+
+[node name="Label" type="Label" parent="." unique_id=454417151]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -368.5
+offset_right = 368.5
+offset_bottom = 126.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 80
+text = "Select a map"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1176187620]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -626.0
+offset_top = -935.0
+offset_right = 626.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+columns = 2
+
+[node name="Fjord" type="Button" parent="GridContainer" unique_id=861352538]
+custom_minimum_size = Vector2(601, 425)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_7lghd")
+icon = ExtResource("2_15vm8")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Split" type="Button" parent="GridContainer" unique_id=1768043797]
+custom_minimum_size = Vector2(601, 425)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_r38gb")
+icon = ExtResource("3_fwfho")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Bridge" type="Button" parent="GridContainer" unique_id=569870119]
+custom_minimum_size = Vector2(601, 425)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_ydjxy")
+icon = ExtResource("4_7lghd")
+expand_icon = true
+
+[node name="Isle" type="Button" parent="GridContainer" unique_id=689766996]
+custom_minimum_size = Vector2(601, 425)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_lnbly")
+icon = ExtResource("5_r38gb")
+expand_icon = true
+
+[node name="randommap" type="Button" parent="." unique_id=570265192]
+offset_left = 1612.0
+offset_top = 33.0
+offset_right = 1865.0
+offset_bottom = 109.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Random map"
+
+[node name="info Fjord" type="Label" parent="." unique_id=80055808]
+custom_minimum_size = Vector2(250, 425)
+offset_left = 50.0
+offset_top = 150.0
+offset_right = 300.0
+offset_bottom = 575.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Name: Fjord
+Towns: 24
+Duration: 60 min"
+
+[node name="info split" type="Label" parent="." unique_id=803972356]
+custom_minimum_size = Vector2(250, 425)
+offset_left = 1622.0
+offset_top = 142.0
+offset_right = 1872.0
+offset_bottom = 567.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Name: Split
+Towns: 31
+Duration: 120 Min"
+
+[node name="info Bridge" type="Label" parent="." unique_id=168331742]
+custom_minimum_size = Vector2(250, 425)
+offset_left = 53.0
+offset_top = 621.0
+offset_right = 303.0
+offset_bottom = 1046.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Name: Bridge
+Towns: 28
+Duration: 90 Min"
+
+[node name="info Isle" type="Label" parent="." unique_id=670006312]
+custom_minimum_size = Vector2(250, 425)
+offset_left = 1622.0
+offset_top = 623.0
+offset_right = 1872.0
+offset_bottom = 1048.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "Name: Isle
+Towns: 20
+Duration: 30 Min"
+
+[node name="Bridge1_3_3" type="Sprite2D" parent="." unique_id=790191468]
+z_index = -2
+position = Vector2(-1217.9999, 2084)
+scale = Vector2(1.9241734, 1.7356856)
+texture = ExtResource("4_l7tl1")
+
+[connection signal="pressed" from="GridContainer/Fjord" to="." method="_on_fjord_pressed"]
+[connection signal="pressed" from="GridContainer/Split" to="." method="_on_split_pressed"]
+[connection signal="pressed" from="GridContainer/Bridge" to="." method="_on_bridge_pressed"]
+[connection signal="pressed" from="GridContainer/Isle" to="." method="_on_isle_pressed"]
+[connection signal="pressed" from="randommap" to="." method="_on_randommap_pressed"]

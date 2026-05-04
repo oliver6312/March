@@ -1,0 +1,916 @@
+[gd_scene format=3 uid="uid://cdaw4wd7ieqhm"]
+
+[ext_resource type="Script" uid="uid://b005jigrgc6n" path="res://UI/InGameUI/UI.gd" id="1_b3bc3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4sdas"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_biik6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rxx4d"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fmcp1"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85mfr"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ww71j"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsfrg"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4a8d6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2y1bi"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yb14p"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j70v3"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1i3s"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="UI" type="CanvasLayer" unique_id=1769323019]
+script = ExtResource("1_b3bc3")
+
+[node name="RightPanel" type="Panel" parent="." unique_id=1334037232]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -206.0
+offset_top = 40.0
+offset_right = -14.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="FactionActionsContainer" type="VBoxContainer" parent="RightPanel" unique_id=1102485872]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 8.0
+grow_horizontal = 2
+
+[node name="WarMeetingDoneButton" type="Button" parent="RightPanel" unique_id=1749599745]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -42.0
+offset_right = 1.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_4sdas")
+text = "End War Metting"
+
+[node name="DwarfGoldHoard" type="Panel" parent="RightPanel" unique_id=798197370]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -530.0
+offset_bottom = -530.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RightPanel/DwarfGoldHoard" unique_id=1232515209]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GoldHoardLabel" type="Label" parent="RightPanel/DwarfGoldHoard/VBoxContainer" unique_id=904825651]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Gold Hoard"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="RightPanel/DwarfGoldHoard/VBoxContainer" unique_id=1362257096]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ThresholdLabel40" type="Label" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer" unique_id=1155586086]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "40 G"
+
+[node name="ThresholdButton40" type="Button" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer" unique_id=1862613888]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="RightPanel/DwarfGoldHoard/VBoxContainer" unique_id=1025499007]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ThresholdLabel80" type="Label" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer2" unique_id=884116561]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "80 G"
+
+[node name="ThresholdButton80" type="Button" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer2" unique_id=864049844]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="RightPanel/DwarfGoldHoard/VBoxContainer" unique_id=1030165295]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ThresholdLabel120" type="Label" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer3" unique_id=1505533008]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "120 G"
+
+[node name="ThresholdButton120" type="Button" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer3" unique_id=640959031]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="RightPanel/DwarfGoldHoard/VBoxContainer" unique_id=1405162741]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ThresholdLabel200" type="Label" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer4" unique_id=136719794]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "200 G"
+
+[node name="ThresholdButton200" type="Button" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer4" unique_id=128654263]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="RightPanel/DwarfGoldHoard/VBoxContainer" unique_id=405762182]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ThresholdLabel320" type="Label" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer5" unique_id=123699558]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "320 G"
+
+[node name="ThresholdButton320" type="Button" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer5" unique_id=2138968318]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="RightPanel/DwarfGoldHoard/VBoxContainer" unique_id=775475102]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ThresholdLabel520" type="Label" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer6" unique_id=1773805751]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "520 G"
+
+[node name="ThresholdButton520" type="Button" parent="RightPanel/DwarfGoldHoard/VBoxContainer/HBoxContainer6" unique_id=1705813315]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="LeftPanel" type="Panel" parent="." unique_id=1982825963]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_top = 40.0
+offset_right = 220.0
+grow_vertical = 2
+
+[node name="HBoxContainerTop" type="HBoxContainer" parent="LeftPanel" unique_id=2019726855]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -0.5
+offset_right = 0.5
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LeftPanel/HBoxContainerTop" unique_id=1354717922]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SettingsButton" type="Button" parent="LeftPanel/HBoxContainerTop/VBoxContainer" unique_id=1976957971]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_biik6")
+text = "Settings"
+
+[node name="SeasonButton" type="Button" parent="LeftPanel/HBoxContainerTop/VBoxContainer" unique_id=1159562499]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_rxx4d")
+
+[node name="RoundLabel" type="Label" parent="LeftPanel/HBoxContainerTop/VBoxContainer" unique_id=1012793232]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="TurnLabel" type="Label" parent="LeftPanel/HBoxContainerTop/VBoxContainer" unique_id=655966467]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="OwnershipPanel" type="Panel" parent="LeftPanel" unique_id=1030757651]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 14.0
+offset_top = 179.0
+offset_right = 206.0
+offset_bottom = 283.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LeftPanel/OwnershipPanel" unique_id=2066718715]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OwnershipTitle" type="Label" parent="LeftPanel/OwnershipPanel/VBoxContainer" unique_id=545656373]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="OrcOwnershipLabel" type="Label" parent="LeftPanel/OwnershipPanel/VBoxContainer" unique_id=401413175]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="DwarfOwnershipLabel" type="Label" parent="LeftPanel/OwnershipPanel/VBoxContainer" unique_id=1248342023]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="ElfOwnershipLabel" type="Label" parent="LeftPanel/OwnershipPanel/VBoxContainer" unique_id=490015800]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="SettlementDetailPanel" type="Panel" parent="LeftPanel" unique_id=388741207]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0.5019608)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 14.0
+offset_top = -200.0
+offset_right = -14.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LeftPanel/SettlementDetailPanel" unique_id=696029719]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="SettlementNameLabel" type="Label" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=866012718]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 24
+
+[node name="SettlementFactionLabel" type="Label" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=135525481]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="SettlementSoldiersLabel" type="Label" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=2102729668]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="BuildingSlotButton1" type="Button" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=1570639710]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_fmcp1")
+
+[node name="BuildingSlotButton2" type="Button" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=96586083]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_85mfr")
+
+[node name="BuildingSlotButton3" type="Button" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=197141999]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_ww71j")
+
+[node name="MercenaryButton" type="Button" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=151428402]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_wsfrg")
+
+[node name="RemoveInfiltrationButton" type="Button" parent="LeftPanel/SettlementDetailPanel/VBoxContainer" unique_id=1962988346]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_4a8d6")
+text = "Remove 
+Infiltration"
+
+[node name="VBoxContainerSemiBottom" type="VBoxContainer" parent="LeftPanel" unique_id=545511427]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.92700005
+anchor_right = 1.0
+anchor_bottom = 0.92700005
+offset_top = -76.08008
+offset_bottom = -0.080078125
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DeleteBuildingButton" type="Button" parent="LeftPanel/VBoxContainerSemiBottom" unique_id=921601602]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_2y1bi")
+text = "Delete Bulding"
+
+[node name="DeselectButton" type="Button" parent="LeftPanel/VBoxContainerSemiBottom" unique_id=1664342678]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_yb14p")
+text = "Deselect"
+
+[node name="VBoxContainerTotalBottom" type="VBoxContainer" parent="LeftPanel" unique_id=248120252]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -76.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TradeButton" type="Button" parent="LeftPanel/VBoxContainerTotalBottom" unique_id=1675085456]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_j70v3")
+text = "Trade"
+
+[node name="NextTurnButton" type="Button" parent="LeftPanel/VBoxContainerTotalBottom" unique_id=1860072167]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_l1i3s")
+text = "Next Turn"
+
+[node name="TopPanel" type="Panel" parent="." unique_id=2128614229]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -540.0
+offset_right = -10.0
+offset_bottom = -506.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeftHBoxContainer" type="HBoxContainer" parent="TopPanel" unique_id=609131742]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 6.0
+grow_vertical = 2
+
+[node name="DwarfGoldLabel" type="Label" parent="TopPanel/LeftHBoxContainer" unique_id=191775118]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="DwarfArmorLabel" type="Label" parent="TopPanel/LeftHBoxContainer" unique_id=2074824726]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="MiddleHBoxContainer" type="HBoxContainer" parent="TopPanel" unique_id=2028150882]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_right = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ElfGoldLabel" type="Label" parent="TopPanel/MiddleHBoxContainer" unique_id=847990961]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="ElfArmorLabel" type="Label" parent="TopPanel/MiddleHBoxContainer" unique_id=1097984600]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="ElfMagicLabel" type="Label" parent="TopPanel/MiddleHBoxContainer" unique_id=1305229556]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="ElfSerenityLabel" type="Label" parent="TopPanel/MiddleHBoxContainer" unique_id=1820814165]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="RightHBoxContainer" type="HBoxContainer" parent="TopPanel" unique_id=103010978]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -6.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="OrcGoldLabel" type="Label" parent="TopPanel/RightHBoxContainer" unique_id=946670654]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="OrcArmorLabel" type="Label" parent="TopPanel/RightHBoxContainer" unique_id=469040073]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+
+[node name="DraftLabel" type="Label" parent="TopPanel" unique_id=772978605]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = 40.0
+offset_right = 0.5
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+
+[node name="DwarfMarchLabel" type="Label" parent="TopPanel" unique_id=1733908208]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = 40.0
+offset_right = 0.5
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+
+[node name="TradeDialog" type="AcceptDialog" parent="TopPanel" unique_id=1555766090]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Trade Menu"
+position = Vector2i(850, 128)
+size = Vector2i(200, 100)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TopPanel/TradeDialog" unique_id=87756282]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 55.0
+
+[node name="TargetFactionOption" type="OptionButton" parent="TopPanel/TradeDialog/HBoxContainer" unique_id=1162618152]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="GoldEdit" type="LineEdit" parent="TopPanel/TradeDialog/HBoxContainer" unique_id=1012374505]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ArmorEdit" type="LineEdit" parent="TopPanel/TradeDialog/HBoxContainer" unique_id=1507717741]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TradeInfoLabel" type="Label" parent="TopPanel/TradeDialog/HBoxContainer" unique_id=11976954]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MoveDialog" type="AcceptDialog" parent="TopPanel" unique_id=435250643]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Move Soldiers"
+position = Vector2i(829, 36)
+size = Vector2i(243, 304)
+ok_button_text = "Send"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TopPanel/MoveDialog" unique_id=2005171511]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 235.0
+offset_bottom = 259.0
+
+[node name="PromptLabel" type="Label" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=1010360574]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AmountEdit" type="LineEdit" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=145275559]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AttackerArmorLabel" type="Label" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=1830775936]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Attacks Armor"
+
+[node name="AttackerArmorEdit" type="LineEdit" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=1911272355]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="DefenderArmorLabel" type="Label" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=1453900844]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Defenders Armor"
+
+[node name="DefenderArmorEdit" type="LineEdit" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=2136177517]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MoveAllButton" type="Button" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=851954033]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Move All"
+
+[node name="MoveHalfButton" type="Button" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=1141537664]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Move Half"
+
+[node name="BringDarkLordCheckBox" type="CheckBox" parent="TopPanel/MoveDialog/VBoxContainer" unique_id=1871474710]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Bring Dark Lord"
+
+[node name="SettingsDialog" type="AcceptDialog" parent="TopPanel" unique_id=1231288899]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Settings"
+ok_button_text = "Close"
+
+[node name="QuitButton" type="Button" parent="TopPanel/SettingsDialog" unique_id=1065418446]
+unique_name_in_owner = true
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 92.0
+offset_bottom = 55.0
+text = "Quit"
+
+[node name="SeasonDialog" type="AcceptDialog" parent="TopPanel" unique_id=408923835]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Season Details"
+position = Vector2i(137, 64)
+size = Vector2i(161, 184)
+ok_button_text = "Close"
+
+[node name="Label" type="Label" parent="TopPanel/SeasonDialog" unique_id=980938198]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 153.0
+offset_bottom = 139.0
+text = "Spring effect: None
+Summer effect: None
+Autumn effect: Elves gain 1 soldier in each settlement with a Sacred Grove for each serenity.
+Winder effect: You lose one soldier when you move, elves are immune to this effect.
+"
+
+[node name="DwarfBuildingMenu" type="Panel" parent="." unique_id=1795424472]
+unique_name_in_owner = true
+visible = false
+offset_left = 132.0
+offset_top = 218.0
+offset_right = 340.0
+offset_bottom = 427.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DwarfBuildingMenu" unique_id=2035067856]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DwarfBuildingMenuTitle" type="Label" parent="DwarfBuildingMenu/VBoxContainer" unique_id=987642486]
+layout_mode = 2
+text = "Dwarf Buildings"
+horizontal_alignment = 1
+
+[node name="Armor Smith" type="Button" parent="DwarfBuildingMenu/VBoxContainer" unique_id=1081106492]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Armor Smith"
+
+[node name="Goat Stable" type="Button" parent="DwarfBuildingMenu/VBoxContainer" unique_id=260771080]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Goat Stable"
+
+[node name="Gold Mine" type="Button" parent="DwarfBuildingMenu/VBoxContainer" unique_id=405067705]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Gold Mine"
+
+[node name="Training Grounds" type="Button" parent="DwarfBuildingMenu/VBoxContainer" unique_id=328731967]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Training Grounds"
+
+[node name="WinDialog" type="AcceptDialog" parent="." unique_id=2092558284]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(112, 115)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WinDialog" unique_id=1872451243]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 104.0
+offset_bottom = 66.0
+
+[node name="WinLabel" type="Label" parent="WinDialog/VBoxContainer" unique_id=678215041]
+layout_mode = 2
+
+[node name="MainMenuButton" type="Button" parent="WinDialog/VBoxContainer" unique_id=255881321]
+layout_mode = 2
+text = "Main menu"
+
+[node name="leavegame" type="AcceptDialog" parent="." unique_id=1341118116]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(774, 141)
+ok_button_text = "No"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="leavegame" unique_id=912713993]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 766.0
+offset_bottom = 92.0
+
+[node name="leaveLabel" type="Label" parent="leavegame/VBoxContainer" unique_id=1634011956]
+layout_mode = 2
+text = "Are you sure you want to go back to the main menu? (the game only saves the last complete turn)"
+
+[node name="yesbutton" type="Button" parent="leavegame/VBoxContainer" unique_id=1266705684]
+layout_mode = 2
+text = "Yes"
+
+[connection signal="pressed" from="leavegame/VBoxContainer/yesbutton" to="." method="_on_yesbutton_pressed"]
