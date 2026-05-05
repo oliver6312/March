@@ -9,17 +9,20 @@ var Maps = [
 
 func _on_fjord_pressed() -> void:
 	SaveManager.is_loading_game = false
+	TurnState.reset_for_new_game()
 	get_tree().change_scene_to_file(Maps[0])
 	
 
 
 func _on_split_pressed() -> void:
 	SaveManager.is_loading_game = false
+	TurnState.reset_for_new_game()
 	get_tree().change_scene_to_file(Maps[1])
 
 
 
 func _on_randommap_pressed() -> void:
+	TurnState.reset_for_new_game()
 	SaveManager.is_loading_game = false
 	
 	randomize()
@@ -32,8 +35,12 @@ func _input(event):
 
 
 func _on_bridge_pressed() -> void:
+	SaveManager.is_loading_game = false
+	TurnState.reset_for_new_game()
 	get_tree().change_scene_to_file(Maps[2])
 
 
 func _on_isle_pressed() -> void:
+	SaveManager.is_loading_game = false
+	TurnState.reset_for_new_game()
 	get_tree().change_scene_to_file(Maps[3])

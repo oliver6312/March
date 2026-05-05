@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cx685qyd5se2x" path="res://PlayBoard/Fjord/Fjord1.1.2.png" id="2_15vm8"]
 [ext_resource type="Texture2D" uid="uid://6qev8kw42vwp" path="res://PlayBoard/Split/Split1.2.3.png" id="3_fwfho"]
 [ext_resource type="Texture2D" uid="uid://tpsdvrrre3r8" path="res://PlayBoard/Bridge/Bridge1.4.1.png" id="4_7lghd"]
-[ext_resource type="Texture2D" uid="uid://b5ktwwk1o5fyx" path="res://PlayBoard/Bridge/Bridge1.3.3.png" id="4_l7tl1"]
 [ext_resource type="Texture2D" uid="uid://cseklnqibibb3" path="res://PlayBoard/Isle/Isle1.0.0.png" id="5_r38gb"]
+[ext_resource type="Texture2D" uid="uid://0wo4qtm81rm8" path="res://UI/OutGameUI/Bridge background.jpg" id="7_r38gb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7lghd"]
 content_margin_left = 4.0
@@ -181,11 +181,11 @@ text = "Name: Isle
 Towns: 20
 Duration: 30 Min"
 
-[node name="Bridge1_3_3" type="Sprite2D" parent="." unique_id=790191468]
+[node name="BridgeBackground" type="Sprite2D" parent="." unique_id=1610838027]
 z_index = -2
-position = Vector2(-1217.9999, 2084)
-scale = Vector2(1.9241734, 1.7356856)
-texture = ExtResource("4_l7tl1")
+position = Vector2(722.99994, 725.00006)
+scale = Vector2(1.8665506, 1.8035715)
+texture = ExtResource("7_r38gb")
 
 [connection signal="pressed" from="GridContainer/Fjord" to="." method="_on_fjord_pressed"]
 [connection signal="pressed" from="GridContainer/Split" to="." method="_on_split_pressed"]

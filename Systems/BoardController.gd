@@ -784,6 +784,6 @@ func choose_one_starting_war_promise() -> void:
 			settlement.set_orc_war_promise(false)
 
 func _input(event):
-	return
+	
 	if event.is_action_pressed("ui_cancel"):
-		ui.show_leave_popup()
+		ui._open_settings()

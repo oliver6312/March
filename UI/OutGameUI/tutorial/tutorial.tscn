@@ -7,8 +7,9 @@ script = ExtResource("1_01xb1")
 
 [node name="PageImage" type="TextureRect" parent="." unique_id=1170136824]
 offset_left = -9.0
+offset_top = -7.0
 offset_right = 1933.0
-offset_bottom = 1081.0
+offset_bottom = 1091.0
 expand_mode = 3
 stretch_mode = 5
 

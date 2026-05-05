@@ -7,6 +7,8 @@ var raiding_faction: int = Faction.Type.ORC
 var blacksmith_bonus: bool = false
 var raid_bonus = 8
 
+
+
 func validate(context: CommandContext) -> bool:
 	if settlement == null:
 		return false

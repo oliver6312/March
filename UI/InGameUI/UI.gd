@@ -58,6 +58,7 @@ signal move_all_requested()
 @onready var close_action_info_panel: Button = %CloseActionInfoPanel
 @onready var faction_info_button: Button = %FactionInfoButton
 @onready var faction_info_panel: Panel = %FactionInfoPanel
+@onready var main_menu_button: Button = $TopPanel/SettingsDialog/VBoxContainer/MainmenuButton
 @onready var close_faction_info_panel: Button = %CloseFactionInfoPanel
 
 # =========================
@@ -183,7 +184,7 @@ func _connect_button_signals() -> void:
 	faction_info_button.pressed.connect(_info_faction_open)
 	close_action_info_panel.pressed.connect(hide_info_action)
 	close_faction_info_panel.pressed.connect(hide_info_faction)
-
+	main_menu_button.pressed.connect(_main_menu)
 
 
 
@@ -296,11 +297,13 @@ func _on_next_turn_pressed() -> void:
 		print("No board found")
 		return
 		
-	var ok := SaveManager.save_game(board)
+	var ok = SaveManager.save_game(board)
 	if ok:
 		print("Save successful")
 	else:
 		print("Save failed")
+	
+	hide_dwarf_march_status()
 
 func _on_turn_changed(new_turn: Faction.Type) -> void:
 	turn_label.text = "%s turn" % _faction_name(new_turn)
@@ -352,7 +355,11 @@ func hide_info_action() -> void:
 
 func hide_info_faction() -> void:
 	faction_info_panel.visible = false
-
+	
+func _main_menu()-> void:
+	settings_dialog.visible = false
+	show_leave_popup()
+	
 # =========================
 # Resource / trade UI
 # =========================

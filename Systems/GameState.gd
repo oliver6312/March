@@ -486,4 +486,36 @@ func _check_conquest_win() -> Dictionary:
 func _set_game_winner(faction: int, reason: String) -> void:
 	game_over = true
 	winning_faction = faction
-	game_won.emit(faction, reason)
+	game_won.emit(faction, reason)	
+
+
+func reset_for_new_game() -> void:
+	turn_index = 0
+	current_turn = TURN_ORDER[0]
+	round = 1
+
+	season_index = 0
+	current_season = SEASON_ORDER[0]
+	season_extended_this_round = false
+	elves_extended_season_this_season = false
+
+	elf_serenity = 2
+	elf_magic = 8
+
+	gold.clear()
+	armor.clear()
+	_initialize_resources()
+
+	orc_current_dark_lord = ORC_LORD_NONE
+	for lord in orc_dead_dark_lords.keys():
+		orc_dead_dark_lords[lord] = false
+	dwarf_gold_action_assignments.clear()
+	_initialize_dwarf_data()
+	current_faction_controller = null
+	game_over = false
+	winning_faction = Faction.Type.NEUTRAL
+
+	turn_changed.emit(current_turn)
+	round_changed.emit(round)
+	resources_changed.emit()
+	season_changed.emit(current_season)

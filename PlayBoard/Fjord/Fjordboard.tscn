@@ -45,46 +45,46 @@ script = ExtResource("3_rwp0f")
 
 [node name="Astbury" parent="." unique_id=167798052 instance=ExtResource("4_qpjto")]
 position = Vector2(1238, 1222)
-settlement_id = "Astbury"
-settlement_name = "Astbury"
+settlement_id = "Morvak"
+settlement_name = "Morvak"
 soldiers = 8
 building_slot_count = 2
 
 [node name="Hilldun" parent="." unique_id=1658002749 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(1101, 772)
-settlement_id = "Hilldun"
-settlement_name = "Hilldun"
+settlement_id = "Drelkar"
+settlement_name = "Drelkar"
 soldiers = 8
 neighbors = [NodePath("../Astbury")]
 building_slot_count = 2
 
 [node name="Mosswyn" parent="." unique_id=342480900 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(1296, 364)
-settlement_id = "Mosswyn"
-settlement_name = "Mosswyn"
+settlement_id = "Grendin"
+settlement_name = "Grendin"
 soldiers = 4
 neighbors = [NodePath("../Gorthak"), NodePath("../Hilldun")]
 
 [node name="Gorthak" parent="." unique_id=1722310604 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(950, 331)
-settlement_id = "Gorthak"
-settlement_name = "Gorthak"
+settlement_id = "Velthar"
+settlement_name = "Velthar"
 soldiers = 8
 neighbors = [NodePath("../Hilldun"), NodePath("../Wynlora")]
 building_slot_count = 2
 
 [node name="Faelgrove" parent="." unique_id=1925493382 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(174, 972)
-settlement_id = "Faelgrove"
-settlement_name = "Faelgrove"
+settlement_id = "Kormeth"
+settlement_name = "Kormeth"
 soldiers = 8
 neighbors = [NodePath("../Maldrak"), NodePath("../Vorgrin")]
 building_slot_count = 2
 
 [node name="Varnok" parent="." unique_id=2017877252 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(957, 1580)
-settlement_id = "Varnok"
-settlement_name = "Varnok"
+settlement_id = "Vargrin"
+settlement_name = "Vargrin"
 soldiers = 8
 neighbors = [NodePath("../Astbury"), NodePath("../Valmere")]
 building_slot_count = 2
@@ -92,91 +92,91 @@ is_orc_war_promise = true
 
 [node name="Brakkar" parent="." unique_id=1479914948 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(400, 1840)
-settlement_id = "Brakkar"
-settlement_name = "Brakkar"
+settlement_id = "Kelthorn"
+settlement_name = "Kelthorn"
 soldiers = 8
 neighbors = [NodePath("../Varnok"), NodePath("../Drogmar")]
 building_slot_count = 2
 
 [node name="Windharrow" parent="." unique_id=278960547 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2077, 2275)
-settlement_id = "Windharrow"
-settlement_name = "Windharrow"
+settlement_id = "Brenthin"
+settlement_name = "Brenthin"
 soldiers = 8
 neighbors = [NodePath("../Saltmere"), NodePath("../Caelporth")]
 building_slot_count = 2
 
 [node name="Caelporth" parent="." unique_id=521197354 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2307, 1717)
-settlement_id = "Caelporth"
-settlement_name = "Caelporth"
+settlement_id = "Valdorn"
+settlement_name = "Valdorn"
 soldiers = 8
 neighbors = [NodePath("../Durnhal"), NodePath("../Brinefall"), NodePath("../Greyharbor"), NodePath("../Balgrin")]
 building_slot_count = 2
 
 [node name="Sevrin" parent="." unique_id=168259393 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(3341, 1613)
-settlement_id = "Sevrin"
-settlement_name = "Sevrin"
+settlement_id = "Garveth"
+settlement_name = "Garveth"
 soldiers = 4
 neighbors = [NodePath("../Balgrin")]
 
 [node name="Brinefall" parent="." unique_id=510149928 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(1961, 932)
-settlement_id = "Brinefall"
-settlement_name = "Brinefall"
+settlement_id = "Draveth"
+settlement_name = "Draveth"
 soldiers = 12
 neighbors = [NodePath("../Durnhal")]
 building_slot_count = 3
 
 [node name="Kelveth" parent="." unique_id=1133521257 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2706, 680)
-settlement_id = "Kelveth"
-settlement_name = "Kelveth"
+settlement_id = "Varketh"
+settlement_name = "Varketh"
 soldiers = 4
 neighbors = [NodePath("../Stonvar")]
 
 [node name="Durgath" parent="." unique_id=423924784 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(3067, 968)
-settlement_id = "Durgath"
-settlement_name = "Durgath"
+settlement_id = "Borlind"
+settlement_name = "Borlind"
 soldiers = 4
 neighbors = [NodePath("../Kelveth")]
 
 [node name="Balgrin" parent="." unique_id=383365441 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2817, 1341)
-settlement_id = "Balgrin"
-settlement_name = "Balgrin"
+settlement_id = "Norgrim"
+settlement_name = "Norgrim"
 soldiers = 12
 neighbors = [NodePath("../Durgath"), NodePath("../Khardum")]
 building_slot_count = 3
 
 [node name="Stonvar" parent="." unique_id=97939347 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2136, 535)
-settlement_id = "Stonvar"
-settlement_name = "Stonvar"
+settlement_id = "Malgrin"
+settlement_name = "Malgrin"
 soldiers = 8
 neighbors = [NodePath("../Brinefall")]
 building_slot_count = 2
 
 [node name="Maldrak" parent="." unique_id=1544025533 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(169, 1444)
-settlement_id = "Maldrak"
-settlement_name = "Maldrak"
+settlement_id = "Thandrin"
+settlement_name = "Thandrin"
 soldiers = 4
 neighbors = [NodePath("../Brakkar")]
 
 [node name="Drogmar" parent="." unique_id=845110796 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(1117, 2264)
-settlement_id = "Drogmar"
-settlement_name = "Drogmar"
+settlement_id = "Dornak"
+settlement_name = "Dornak"
 soldiers = 4
 neighbors = [NodePath("../Valmere"), NodePath("../Windharrow")]
 
 [node name="Valmere" parent="." unique_id=1308034045 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(1347, 1836)
-settlement_id = "Valmere"
-settlement_name = "Valmere"
+settlement_id = "Halveth"
+settlement_name = "Halveth"
 soldiers = 8
 neighbors = [NodePath("../Durnhal")]
 building_slot_count = 2
@@ -184,46 +184,46 @@ is_orc_war_promise = true
 
 [node name="Durnhal" parent="." unique_id=1770193534 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(1829, 1551)
-settlement_id = "Durnhal"
-settlement_name = "Durnhal"
+settlement_id = "Thalvek"
+settlement_name = "Thalvek"
 soldiers = 4
 neighbors = [null]
 
 [node name="Saltmere" parent="." unique_id=1694823770 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2723, 2330)
-settlement_id = "Saltmere"
-settlement_name = "Saltmere"
+settlement_id = "Korvath"
+settlement_name = "Korvath"
 soldiers = 4
 neighbors = [NodePath("../Greyharbor")]
 
 [node name="Greyharbor" parent="." unique_id=1435910695 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2861, 1954)
-settlement_id = "Greyharbor"
-settlement_name = "Greyharbor"
+settlement_id = "Selgrin"
+settlement_name = "Selgrin"
 soldiers = 8
 neighbors = [NodePath("../Sevrin")]
 building_slot_count = 2
 
 [node name="Wynlora" parent="." unique_id=1146920038 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(354, 444)
-settlement_id = "Wynlora"
-settlement_name = "Wynlora"
+settlement_id = "Tarnok"
+settlement_name = "Tarnok"
 soldiers = 8
 neighbors = [NodePath("../Faelgrove"), NodePath("../Vorgrin")]
 building_slot_count = 2
 
 [node name="Vorgrin" parent="." unique_id=1327669342 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(646, 968)
-settlement_id = "Vorgrin"
-settlement_name = "Vorgrin"
+settlement_id = "Balvorn"
+settlement_name = "Balvorn"
 soldiers = 12
 neighbors = [NodePath("../Hilldun"), NodePath("../Astbury")]
 building_slot_count = 3
 
 [node name="Khardum" parent="." unique_id=474685528 node_paths=PackedStringArray("neighbors") instance=ExtResource("4_qpjto")]
 position = Vector2(2403, 1086)
-settlement_id = "Khardum"
-settlement_name = "Khardum"
+settlement_id = "Kelvar"
+settlement_name = "Kelvar"
 soldiers = 8
 neighbors = [NodePath("../Brinefall"), NodePath("../Stonvar")]
 building_slot_count = 2

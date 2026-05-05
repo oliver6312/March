@@ -440,6 +440,10 @@ func _has_raidable_building(settlement: Settlement) -> bool:
 	return _get_first_non_empty_non_effigy_slot(settlement) != -1
 
 func _handle_raid_selected(settlement: Settlement) -> void:
+	if settlement.faction != ORC_FACTION:
+		
+		return
+		
 	var slot_index := _get_first_non_empty_non_effigy_slot(settlement)
 	if slot_index == -1:
 		print("That settlement has no building to raid.")
@@ -462,6 +466,10 @@ func _handle_raid_selected(settlement: Settlement) -> void:
 	_refresh_ui()
 
 func _handle_brutalize_selected(settlement: Settlement) -> void:
+	if settlement.faction != ORC_FACTION:
+		
+		return
+		
 	var slot_index := _get_first_non_empty_non_effigy_slot(settlement)
 	if slot_index == -1:
 		print("That settlement has no building to brutalize.")

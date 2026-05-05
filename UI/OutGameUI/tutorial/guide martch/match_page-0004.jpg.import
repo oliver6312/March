@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctioupg5oimss"
-path="res://.godot/imported/To win, you must increase your land control to above 50. (1)_page-0001.jpg-fecab8156824e3aced4c49a3517c7ee2.ctex"
+uid="uid://m76rxa4y55gl"
+path="res://.godot/imported/match_page-0004.jpg-d0573934d7e7c46cddb969d795c5cf5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/OutGameUI/tutorial/pages/To win, you must increase your land control to above 50. (1)_page-0001.jpg"
-dest_files=["res://.godot/imported/To win, you must increase your land control to above 50. (1)_page-0001.jpg-fecab8156824e3aced4c49a3517c7ee2.ctex"]
+source_file="res://UI/OutGameUI/tutorial/guide martch/match_page-0004.jpg"
+dest_files=["res://.godot/imported/match_page-0004.jpg-d0573934d7e7c46cddb969d795c5cf5a.ctex"]
 
 [params]
 

@@ -65,8 +65,7 @@ func get_action_list() -> Array:
 		actions.append(_make_action("root_of_all_evil", "Root of All Evil", true))
 		actions.append(_make_action("extend_season", "Extend Season", not extend_season_used_this_turn))
 		actions.append(_make_action("shadow_ritual", "Shadow Ritual", mode == MODE_NONE))
-	else:
-		actions.append(_make_action("remove_infiltration", "Remove Infiltration", mode == MODE_NONE))
+
 
 	return actions
 

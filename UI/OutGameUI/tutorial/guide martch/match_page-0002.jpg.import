@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biwa7bwayv636"
-path="res://.godot/imported/turutale part 1_page-0003.jpg-d7d2ca391158d0eb4eee3bd6fdc38841.ctex"
+uid="uid://ieesnx0nb88a"
+path="res://.godot/imported/match_page-0002.jpg-ed8c35cf7bc6fdf23408317e3160aec3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/OutGameUI/tutorial/pages/turutale part 1_page-0003.jpg"
-dest_files=["res://.godot/imported/turutale part 1_page-0003.jpg-d7d2ca391158d0eb4eee3bd6fdc38841.ctex"]
+source_file="res://UI/OutGameUI/tutorial/guide martch/match_page-0002.jpg"
+dest_files=["res://.godot/imported/match_page-0002.jpg-ed8c35cf7bc6fdf23408317e3160aec3.ctex"]
 
 [params]
 
